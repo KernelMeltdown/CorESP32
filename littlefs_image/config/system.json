@@ -1,0 +1,31 @@
+{
+  "version": "7.0",
+  "device_name": "CorESP32",
+  "config_mode": "auto_init",
+  "uart": {
+    "console": {
+      "num": 0,
+      "baudrate": 115200
+    }
+  },
+  "auto_init": {
+    "enabled": true,
+    "gpio": [
+      {
+        "pin": 8,
+        "name": "LED",
+        "mode": "output",
+        "initial": 0
+      },
+      {
+        "pin": 9,
+        "name": "BUTTON",
+        "mode": "input_pullup"
+      }
+    ]
+  },
+  "features": {
+    "shell": true,
+    "logging": true
+  }
+}
