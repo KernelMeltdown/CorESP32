@@ -57,6 +57,9 @@ static const command_t cmd_help = {
 
 void register_builtin_commands(void)
 {
+    
+    // EIGENTLICH SOLLTE DIESES PART NICHT HARCODIERT SEIN, ALLE COMMANDS SOLLTEN AUTOMATISCH DYNAMISCH
+    // ERKANNT WERDEN , DIESER PART HIER WIRKT ÜBERFLÜSSIG
     command_register(&cmd_help);
     register_system_commands();
     register_gpio_commands();

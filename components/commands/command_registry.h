@@ -23,6 +23,8 @@ extern "C"
         command_fn_t execute;
     } command_t;
 
+    // EIGENTLICH SOLLTE DIESES PART NICHT HARCODIERT SEIN, ALLE COMMANDS SOLLTEN AUTOMATISCH DYNAMISCH
+    // ERKANNT WERDEN , DIESER PART HIER WIRKT ÜBERFLÜSSIG
     /**
      * @brief Initialize command registry
      */
